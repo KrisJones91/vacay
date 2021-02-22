@@ -1,7 +1,7 @@
 use vacay2171;
 
 
--- CREATE TABLE products (
+-- CREATE TABLE vacay (
 --   id INT NOT NULL AUTO_INCREMENT,
 --   title VARCHAR(255) NOT NULL,
 --   description VARCHAR(255),
@@ -10,20 +10,47 @@ use vacay2171;
 --   PRIMARY KEY (id)
 -- );
 
--- CREATE TABLE reviews (
+-- CREATE TABLE trip (
 --   id INT NOT NULL AUTO_INCREMENT,
 --   title VARCHAR(255) NOT NULL,
---   body VARCHAR(255),
---   rating INT NOT NULL,
---   productId INT NOT NULL,
+--   description VARCHAR(255),
+--   price INT NOT NULL,
 
 --   PRIMARY KEY (id),
 
---   FOREIGN KEY (productId)
---     REFERENCES products (id)
---     ON DELETE CASCADE
 -- );
+-- CREATE TABLE cruise (
+--   id INT NOT NULL AUTO_INCREMENT,
+--   title VARCHAR(255) NOT NULL,
+--   description VARCHAR(255),
+--   start VARCHAR(255) NOT NULL,
+--   end VARCHAR(255) NOT NULL,
+--   length INT NOT NULL,
+--   price INT NOT NULL,
+--   tripId INT NOT NULL,
 
+--   PRIMARY KEY (id),
+
+--   FOREIGN KEY (tripId)
+--     REFERENCES trip (id)
+--     ON DELETE CASCADE
+--);
+
+-- CREATE TABLE rental (
+--   id INT NOT NULL AUTO_INCREMENT,
+--   car VARCHAR(255) NOT NULL,
+--   description VARCHAR(255),
+--   duration VARCHAR(255) NOT NULL,
+--   miles INT NOT NULL,
+--   price INT NOT NULL,
+--   tripId INT NOT NULL,
+
+--   PRIMARY KEY (id),
+
+--   FOREIGN KEY (tripId)
+--     REFERENCES trip (id)
+--     ON DELETE CASCADE
+--);
 
 
 

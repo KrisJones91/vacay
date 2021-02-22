@@ -33,10 +33,12 @@ namespace vacay
             //Repositories 
             services.AddTransient<TripRepository>();
             services.AddTransient<CruiseRepository>();
+            services.AddTransient<RentalRepository>();
 
             //Services
             services.AddTransient<TripsService>();
             services.AddTransient<CruiseService>();
+            services.AddTransient<RentalsService>();
 
 
             //Database Connection
